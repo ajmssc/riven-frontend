@@ -11,8 +11,8 @@ concurrency:
     cancel-in-progress: true
 
 env:
-    REGISTRY_IMAGE_GHCR: ghcr.io/rivenmedia/riven-frontend
-    REGISTRY_IMAGE_DOCKERHUB: docker.io/spoked/riven-frontend
+    REGISTRY_IMAGE_GHCR: ghcr.io/ajmssc/riven-frontend
+    REGISTRY_IMAGE_DOCKERHUB: docker.io/ajmssc/riven-frontend
 
 jobs:
     build:
