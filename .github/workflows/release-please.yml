@@ -52,6 +52,12 @@ jobs:
                   config-file: ".github/prerelease-config.json"
                   manifest-file: ".github/prerelease-manifest.json"
                   token: ${{ secrets.GITHUB_TOKEN }}
+            
+            - name: Debug outputs
+              run: |
+                  echo "releases_created: ${{ steps.release.outputs.releases_created }}"
+                  echo "tag_name: ${{ steps.release.outputs.tag_name }}"
+                  echo "path: ${{ steps.release.outputs.path }}"
 
     # This job runs tests before the creation of the prerelease
     prerelease-test:
